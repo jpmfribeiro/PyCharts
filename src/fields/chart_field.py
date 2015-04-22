@@ -3,7 +3,7 @@
 class ChartField(object):
 
     '''
-            The Python class representation of the chart options, as specified in http://api.highcharts.com/highcharts#chart.
+            The Python class representation of the chart options, as specified in http://api.highcharts.com/highcharts#chart
             This is a reduced version with only the most important options.
     '''
 
@@ -28,7 +28,7 @@ class ChartField(object):
                         'solidgauge', 'spline', 'treemap', 'waterfall']     # TODO: Create some Enum or class
 
         if chart_type not in valid_types:
-            raise AttributeError('type ' + chart_type + ' is not supported, it should be one of: ' + str(valid_types))
+            raise AttributeError('type ' + str(chart_type) + ' is not supported, it should be one of: ' + str(valid_types))
         else:
             self.type = chart_type
 
@@ -46,6 +46,7 @@ class ChartField(object):
 
     def set_render_to(self, html_div):
         # TODO
+
 
     def set_background_color(self, color):
         # TODO
