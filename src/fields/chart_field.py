@@ -8,13 +8,13 @@ class ChartField(object):
     '''
 
     def __init__(self):
-        self.align_ticks = True  # When using multiple axis, the ticks of two or more opposite axes will automatically be aligned by adding ticks to the axis or axes with the least ticks.
-                                 # This can be prevented by setting alignTicks to false.
-                                 # If the grid lines look messy, it's a good idea to hide them for the secondary axis by setting gridLineWidth to 0. Defaults to true.
+        # self.align_ticks = True  # When using multiple axis, the ticks of two or more opposite axes will automatically be aligned by adding ticks to the axis or axes with the least ticks.
+        #                          # This can be prevented by setting alignTicks to false.
+        #                          # If the grid lines look messy, it's a good idea to hide them for the secondary axis by setting gridLineWidth to 0. Defaults to true.
 
-        self.animation = True    # Set the overall animation for all chart updating.
+        # self.animation = True    # Set the overall animation for all chart updating.
 
-        self.background_color = "#FFFFFF"   # Default: white
+        # self.background_color = "#FFFFFF"   # Default: white
         self.render_to = None    # The HTML element where the chart will be rendered.
         self.type = "line"       # The chart type. TODO: Create some Enum or class for chart types?
 
@@ -32,27 +32,32 @@ class ChartField(object):
         else:
             self.type = chart_type
 
-    def set_align_ticks(self, align):
-        if not type(align) is bool:
-            raise TypeError('align should be a boolean (True or False).')
-        else:
-            self.align_ticks = align
+    # def set_align_ticks(self, align):
+    #     if not type(align) is bool:
+    #         raise TypeError('align should be a boolean (True or False).')
+    #     else:
+    #         self.align_ticks = align
 
-    def set_animation(self, animation):
-        if not type(animation) is bool:
-            raise TypeError('animation should be a boolean (True or False).')
-        else:
-            self.animation = animation
+    # def set_animation(self, animation):
+    #     if not type(animation) is bool:
+    #         raise TypeError('animation should be a boolean (True or False).')
+    #     else:
+    #         self.animation = animation
 
     def set_render_to(self, html_div):
         # TODO
 
-
-    def set_background_color(self, color):
-        # TODO
+    # def set_background_color(self, color):
+    #     # TODO
 
 
 # OUTPUT
 
     def to_javascript(self):
-        # TODO
+        jsc = "chart: {"
+        jsc += "type: '" + self.type + "'"
+        if self.render_to is not None:
+            jsc += ", renderTo: '" + self.render_to + "'"
+        jsc += "}"
+
+        return jsc
