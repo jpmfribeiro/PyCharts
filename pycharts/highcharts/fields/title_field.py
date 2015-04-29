@@ -23,3 +23,7 @@ class TitleField(object):
             self.align = align
 
     def to_javascript(self):
+        jsc = "title: {"
+        jsc += "text: '" + self.text + "'"
+        jsc += "}"
+        return jsc

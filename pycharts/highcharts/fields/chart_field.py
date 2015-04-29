@@ -14,7 +14,7 @@ class ChartField(object):
 
         # self.animation = True    # Set the overall animation for all chart updating.
 
-        # self.background_color = "#FFFFFF"   # Default: white
+        self.background_color = "#FFFFFF"   # Default: white
         self.render_to = None    # The HTML element where the chart will be rendered.
         self.type = "line"       # The chart type. TODO: Create some Enum or class for chart types?
 
@@ -45,10 +45,10 @@ class ChartField(object):
     #         self.animation = animation
 
     def set_render_to(self, html_div):
-        # TODO
+        self.render_to = str(html_div)
 
-    # def set_background_color(self, color):
-    #     # TODO
+    def set_background_color(self, color):
+        self.background_color = color
 
 
 # OUTPUT
@@ -58,6 +58,7 @@ class ChartField(object):
         jsc += "type: '" + self.type + "'"
         if self.render_to is not None:
             jsc += ", renderTo: '" + self.render_to + "'"
+        jsc += ", backgroundColor: '" + self.background_color + "'"
         jsc += "}"
 
         return jsc

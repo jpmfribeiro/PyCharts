@@ -20,3 +20,18 @@ class PiePlotOptions(object):
         self.data_labels.show_labels(not enable)
 
     def to_javascript(self):
+        jsc = "pie: {"
+        jsc += "allowPointSelect: "
+        if self.allow_point_select:
+            jsc += "true"
+        else:
+            jsc += "false"
+        jsc += ", cursor: '" + self.cursor + "'"
+        jsc += ", " + self.data_labels.to_javascript()
+        jsc += ", showInLegend: "
+        if self.show_in_legend:
+            jsc += "true"
+        else:
+            jsc += "false"
+        jsc += "}"
+        return jsc

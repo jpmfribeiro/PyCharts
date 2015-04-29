@@ -22,11 +22,18 @@ class PieChart(object):
         self.series_field.add_serie(Series(data_label, data))
 
         self.plot_options_field = PlotOptionsField()
-        self.plot_options_field.add_plot_option(PiePlotOptions)
+        self.plot_options_field.add_plot_option(PiePlotOptions())
 
         self.chart_field = ChartField()
         self.chart_field.set_type('pie')
 
     def to_javascript(self):
-        # TODO
+        jsc = "{"
+        jsc += self.chart_field.to_javascript() + ", "
+        jsc += self.title_field.to_javascript() + ", "
+        jsc += self.plot_options_field.to_javascript() + ", "
+        jsc += self.series_field.to_javascript()
+        jsc += "}"
+
+        return jsc
 

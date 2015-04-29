@@ -10,3 +10,11 @@ class DataLabels(object):
         self.enabled = enable
 
     def to_javascript(self):
+        jsc = "dataLabels: {"
+        jsc += "enabled: "
+        if self.enabled:
+            jsc += "true"
+        else:
+            jsc += "false"
+        jsc += "}"
+        return jsc
