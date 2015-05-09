@@ -14,3 +14,4 @@ class LegendField(object):
         else:
             jsc += "reversed: false"
         jsc += "}"
+        return jsc
