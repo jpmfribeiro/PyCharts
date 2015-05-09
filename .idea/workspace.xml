@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ff578e-209a-4370-a5f3-eb19aa7d51dc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/charts/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/charts/pie_chart.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/chart_field.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/plot_options/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/plot_options/data_labels.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/plot_options/pie_plot_options.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/plot_options_field.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/series/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/series/series.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/series_field.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts/fields/title_field.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/highcharts_plotter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/src/test.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PyCharts.iml" afterPath="$PROJECT_DIR$/.idea/PyCharts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/pycharts/highcharts_plotter.py" afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/pycharts/highcharts_plotter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pycharts/highcharts_plotter.py" afterPath="$PROJECT_DIR$/pycharts/highcharts_plotter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pycharts/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pycharts/Untitled.ipynb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PyCharts.iws" />
@@ -159,7 +141,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="-1535" />
     <option name="y" value="24" />
     <option name="width" value="1535" />
     <option name="height" value="876" />
@@ -219,24 +201,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pycharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyCharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyCharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pycharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="charts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,14 +417,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1535" y="24" width="1535" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21628664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21628664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.50032574" order="8" side_tool="true" content_ui="tabs" />
