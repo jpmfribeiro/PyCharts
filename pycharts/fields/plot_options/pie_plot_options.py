@@ -1,4 +1,4 @@
-from data_labels import DataLabels
+from pycharts.fields.plot_options.data_labels import DataLabels
 
 class PiePlotOptions(object):
 

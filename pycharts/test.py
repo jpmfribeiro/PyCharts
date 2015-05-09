@@ -1,4 +1,5 @@
-from highcharts.charts.pie_chart import PieChart
+from pycharts.charts.pie_chart import PieChart
+from highcharts_plotter import HighChartsPlotter
 
 data = [
                     ['Firefox',   45.0],
@@ -16,3 +17,6 @@ title = "Browser market shares at a specific website, 2014"
 piechart = PieChart(title, data_label, data)
 
 print piechart.to_javascript()
+
+plotter = HighChartsPlotter()
+plotter.plot(piechart)
