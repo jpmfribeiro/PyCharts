@@ -31,4 +31,14 @@ class StackedBarChart(object):
         self.y_axis_field.set_title(y_title)
 
     def to_javascript(self):
-        
+        jsc = "{"
+        jsc += self.chart_field.to_javascript() + ", "
+        jsc += self.title_field.to_javascript() + ", "
+        jsc += self.x_axis_field.to_javascript() + ", "
+        jsc += self.y_axis_field.to_javascript() + ", "
+        jsc += self.legend_field.to_javascript() + ", "
+        jsc += self.plot_options_field.to_javascript() + ", "
+        jsc += self.series_field.to_javascript()
+        jsc += "}"
+
+        return jsc
