@@ -4,7 +4,6 @@
     <list default="true" id="d7ff578e-209a-4370-a5f3-eb19aa7d51dc" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/pycharts/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pycharts/Untitled.ipynb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PyCharts.iws" />
     <ignored path=".idea/workspace.xml" />
