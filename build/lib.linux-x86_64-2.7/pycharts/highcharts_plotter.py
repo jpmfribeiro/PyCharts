@@ -29,7 +29,7 @@ class HighChartsPlotter(object):
         return HTML(html)
 
     def plot(self, chart):
-        return self._highchartify(chart_def_json=chart.to_javascript)
+        return self._highchartify(chart_def_json=chart.to_javascript())
 
 
 
