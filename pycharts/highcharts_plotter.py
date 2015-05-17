@@ -17,7 +17,7 @@ class HighChartsPlotter(object):
         html = '''
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/modules/exporting.js"></script>
-
+        <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <div id="chart_%(unique_id)s" style="min-width: 400px; height: %(height)ipx; margin: 0 auto">Re-run cell if chart is not shown ...</div>
         <script>
             do_chart_%(unique_id)s = function() {
