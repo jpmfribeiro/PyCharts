@@ -6,8 +6,9 @@ from ..fields.axis_field import AxisField
 from ..fields.series.series import Series
 from ..fields.plot_options_field import PlotOptionsField
 from ..fields.plot_options.bar_plot_options import BarPlotOptions
+from highchart import HighChart
 
-class StackedBarChart(object):
+class StackedBarChart(HighChart):
 
     def __init__(self, title, categories, data, y_title=None, stacking="normal"):
         self.chart_field = ChartField()
@@ -28,7 +29,8 @@ class StackedBarChart(object):
         self.x_axis_field = AxisField(is_x_axis=True)
         self.x_axis_field.set_categories(categories)
         self.y_axis_field = AxisField(is_x_axis=False)
-        self.y_axis_field.set_title(y_title)
+        if y_title is not None:
+            self.y_axis_field.set_title(y_title)
 
     def to_javascript(self):
         jsc = "{"

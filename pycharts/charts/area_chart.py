@@ -6,8 +6,9 @@ from ..fields.axis_field import AxisField
 from ..fields.series.series import Series
 from ..fields.plot_options_field import PlotOptionsField
 from ..fields.plot_options.area_plot_options import AreaPlotOptions
+from highchart import HighChart
 
-class AreaChart(object):
+class AreaChart(HighChart):
 
     def __init__(self, title, data, stacking=None, x_title=None, y_title=None):
         self.chart_field = ChartField()
@@ -20,9 +21,11 @@ class AreaChart(object):
             self.series_field.add_serie(Series(name=n, data=d))
 
         self.x_axis_field = AxisField(is_x_axis=True)
-        self.x_axis_field.set_title(text=x_title)
+        if x_title is not None:
+            self.x_axis_field.set_title(x_title)
         self.y_axis_field = AxisField(is_x_axis=False)
-        self.y_axis_field.set_title(y_title)
+        if y_title is not None:
+            self.y_axis_field.set_title(y_title)
 
         self.plot_options_field = PlotOptionsField()
         if stacking is not None:

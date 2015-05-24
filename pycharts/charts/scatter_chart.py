@@ -5,21 +5,20 @@ from ..fields.series_field import SeriesField
 from ..fields.series.series import Series
 from highchart import HighChart
 
-class BubbleChart(HighChart):
+class ScatterChart(HighChart):
 
     def __init__(self, title, data, x_title=None, y_title=None):
         '''
 
         :param title:
         :param data:    The data is represented in the following form:
-                        [ ('First Series', [[x1, y1, z1], [x2, y2, z2], ..., [xn, yn, zn]]),
-                          ('Second Series', [[x1, y1, z1], [x2, y2, z2], ..., [xn, yn, zn]]),
+                        [ ('First Series', [[x1, y1], [x2, y2], ..., [xn, yn]]),
+                          ('Second Series', [[x1, y1], [x2, y2], ..., [xn, yn]]),
                           ... ]
-                         where x, y, z represent the numerical values for the x axis, y axis and
-                         the size of the bubble, respectively.
+                         where x, y represent the numerical values for the x axis and y axis respectively.
         '''
         self.chart_field = ChartField()
-        self.chart_field.set_type('bubble')
+        self.chart_field.set_type('scatter')
 
         self.title_field = TitleField(text=title)
 
@@ -33,6 +32,7 @@ class BubbleChart(HighChart):
         self.y_axis_field = AxisField(is_x_axis=False)
         if y_title is not None:
             self.y_axis_field.set_title(y_title)
+
 
     def to_javascript(self):
         jsc = "{"
