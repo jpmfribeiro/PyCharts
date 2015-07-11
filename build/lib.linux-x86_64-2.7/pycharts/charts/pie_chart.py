@@ -4,8 +4,9 @@ from ..fields.series_field import SeriesField
 from ..fields.series.series import Series
 from ..fields.plot_options_field import PlotOptionsField
 from ..fields.plot_options.pie_plot_options import PiePlotOptions
+from highchart import HighChart
 
-class PieChart(object):
+class PieChart(HighChart):
 
     def __init__(self, title, data_label, data):
         '''
